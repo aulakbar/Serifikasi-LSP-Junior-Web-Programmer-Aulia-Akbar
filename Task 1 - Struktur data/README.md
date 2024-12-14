@@ -1,0 +1,1 @@
+Folder ini berisi code task penggunaan struktur data dalam bahasa pemrograman C.

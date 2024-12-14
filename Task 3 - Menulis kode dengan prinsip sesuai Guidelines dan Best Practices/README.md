@@ -1,0 +1,1 @@
+Folder ini berisi task Menulis kode dengan prinsip sesuai Guidelines dan Best Practices dengan implementasi program untuk menghitung luas segitiga.
