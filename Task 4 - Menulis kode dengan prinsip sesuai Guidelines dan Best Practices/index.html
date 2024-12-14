@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Luas Segitiga</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS eksternal -->
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Luas Segitiga</h1>
+        <!-- Form untuk input data alas dan tinggi segitiga -->
+        <form onsubmit="hitungLuas(event)">
+            <!-- Input untuk alas segitiga -->
+            <div class="form-group">
+                <label for="alas">Alas (cm):</label>
+                <input type="number" id="alas" name="alas" required> <!-- Input untuk alas segitiga -->
+            </div>
+
+            <!-- Input untuk tinggi segitiga -->
+            <div class="form-group">
+                <label for="tinggi">Tinggi (cm):</label>
+                <input type="number" id="tinggi" name="tinggi" required> <!-- Input untuk tinggi segitiga -->
+            </div>
+
+            <!-- Tombol untuk menghitung luas segitiga -->
+            <button type="submit">Hitung</button>
+        </form>
+
+        <!-- Tempat untuk menampilkan hasil perhitungan -->
+        <p id="hasil"></p>
+    </div>
+
+    <script src="main.js"></script> <!-- Link ke file JavaScript eksternal -->
+</body>
+</html>

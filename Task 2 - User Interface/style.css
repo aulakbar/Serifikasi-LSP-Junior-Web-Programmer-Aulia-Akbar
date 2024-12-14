@@ -1,0 +1,68 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f9; 
+}
+.container {
+    background: #ffffff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 100%; 
+    max-width: 500px; /* Membatasi lebar container */
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; /* Memberikan jarak antar elemen */
+}
+.form-group {
+    display: flex; 
+    justify-content: flex-start; /* Menjaga elemen sejajar kiri */
+    align-items: center; 
+    width: 100%; 
+}
+label {
+    font-weight: bold; 
+    flex: 2; /* Menyesuaikan ukuran label agar lebih kecil dari input */
+    margin-right: 10px; /* Memberikan jarak antara label dan elemen setelahnya */
+    white-space: nowrap; 
+}
+.info-text {
+    margin-right: 10px; /* Memberikan jarak antara simbol ":" dan input */
+}
+input, select {
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    flex: 3; /* Membuat input/seleksi lebih lebar */
+    font-size: 14px;
+    width: 100%; 
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* Menjaga tombol berada di tengah */
+    gap: 20px; /* Memberikan jarak antar tombol */
+    width: 100%;
+}
+button {
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    width: 20%; /* Tombol memiliki lebar 20% */
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3; 
+}

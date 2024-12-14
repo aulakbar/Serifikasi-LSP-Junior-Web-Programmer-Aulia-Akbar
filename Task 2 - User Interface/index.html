@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Up UI</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1><u>Input Biodata</u></h1> <!-- Judul Form -->
+        <form id="biodataForm">
+            <!-- Input untuk NIK -->
+            <div class="form-group">
+                <label for="NIK">NIK</label>
+                <span class="info-text">:</span>
+                <input type="number" id="NIK" name="NIK">
+            </div>
+            <!-- Input untuk Nama -->
+            <div class="form-group">
+                <label for="Nama">Nama</label>
+                <span class="info-text">:</span>
+                <input type="text" id="Nama" name="Nama">
+            </div>
+            <!-- Input untuk Tempat Lahir -->
+            <div class="form-group">
+                <label for="Tempat_lahir">Tempat Lahir</label>
+                <span class="info-text">:</span>
+                <input type="text" id="Tempat_lahir" name="Tempat_lahir">
+            </div>
+            <!-- Input untuk Tanggal Lahir -->
+            <div class="form-group">
+                <label for="Tanggal_lahir">Tanggal Lahir</label>
+                <span class="info-text">:</span>
+                <input type="date" id="Tanggal_lahir" name="Tanggal_lahir">
+            </div>
+            <!-- Input untuk Jenis Kelamin -->
+            <div class="form-group">
+                <label for="Jenis_kelamin">Jenis Kelamin</label>
+                <span class="info-text">:</span>
+                <input type="text" id="Jenis_kelamin" name="Jenis_kelamin">
+            </div>
+            <!-- Input untuk Alamat -->
+            <div class="form-group">
+                <label for="Alamat">Alamat</label>
+                <span class="info-text">:</span>
+                <input type="text" id="Alamat" name="Alamat">
+            </div>
+            <!-- Input untuk Agama -->
+            <div class="form-group">
+                <label for="Agama">Agama</label>
+                <span class="info-text">:</span>
+                <!-- Dropdown menu untuk memilih agama -->
+                <select id="Agama" name="Agama">
+                    <option value=""></option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+            </div>
+            <!-- tombol untuk submit dan cancel -->
+            <div class="button-container">
+                <button type="submit" onclick="handleSubmit(event)">Submit</button>
+                <button type="button" onclick="handleCancel()">Cancel</button>
+            </div>
+        </form>
+        <div id="message" style="text-align: center; margin-top: 20px;"></div> <!-- Tempat untuk menampilkan pesan -->
+    </div>
+
+    <script src="main.js"></script> <!-- Link ke file JS -->
+</body>
+</html>
